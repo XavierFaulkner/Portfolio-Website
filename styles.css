@@ -7,10 +7,10 @@
 }
 
 body {
-    background-image: var(--backgroundGradient);
+    background-image: url(images/bg-shapes2.png), var(--backgroundGradient);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 
 .navbar {
@@ -96,4 +96,10 @@ table.table-bordered > tbody > tr > td{
 
 .no-borders {
     border: none;
+}
+
+.welcome-bg {
+    background-color: var(--darkGrey);
+    opacity: .8;
+    border-radius: 5px;
 }
