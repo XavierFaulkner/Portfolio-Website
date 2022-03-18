@@ -1,0 +1,99 @@
+:root {
+    --darkGrey: #2b2a2b;
+    --transferGrey: #444444;
+    --lightGrey: #a8a8a8;
+    --darkPurple: #5d235d;
+    --backgroundGradient: linear-gradient(160deg, var(--darkGrey), var(--transferGrey), var(--lightGrey));
+}
+
+body {
+    background-image: var(--backgroundGradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navbar {
+    background-color: var(--darkPurple);
+    box-shadow: -5px 5px 10px;
+}
+
+.navbar-nav > a {
+    position: relative;
+}
+
+.navbar-nav > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 1px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0);
+}
+
+.navbar-nav > a:hover::after {
+    transform: scale(1);
+}
+
+.darkPurpleBg {
+    background-color: var(--darkPurple);
+    box-shadow: -5px 5px 10px #2b2a2b;
+}
+
+.largerText {
+    font-size: larger;
+}
+
+footer {
+    background-color: var(--darkGrey);
+    height: 50px;
+}
+
+.carousel-item{
+    width: 400px;
+    height: 600px;
+}
+
+.carousel-caption {
+    background-color: var(--darkGrey);
+    opacity: .8;
+}
+
+.carousel-control-prev-bg {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+table.table-bordered{
+    border: none;
+  }
+table.table-bordered > thead > tr > th{
+    border: none;
+}
+table.table-bordered > tbody > tr > th{
+    border: none;
+}
+table.table-bordered > tbody > tr > td{
+    border: none;
+}
+
+.light-bg {
+    background-color: var(--lightGrey);
+}
+
+.dark-bg {
+    background-color: #9e9e9e;
+}
+
+.table-gradient {
+    box-shadow: -5px 5px 10px #2b2a2b;
+}
+
+.no-borders {
+    border: none;
+}
